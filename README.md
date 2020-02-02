@@ -22,7 +22,7 @@ Electronics for an Amban sniper rifle from the Mandalorian. This adds lighting a
 The Proffie is an Arduino based board. You'll need to get your PC setup with the right tools. Instructions are [here](https://github.com/profezzorn/arduino-proffieboard/blob/master/README.md), and you can find information on the main [Proffie discussion board](http://therebelarmory.com/board/97/profezzorns-lab).
 
 1) [Proffie OS 3.9](https://fredrik.hubbe.net/lightsaber/proffieos.html) or later
-2) SD card with all of the sound files. Download the [ZIP file](SDCard.zip) and copy them to the SD Card.
+2) SD card with all of the sound files. Download the [ZIP file](SDCard.zip) and copy them to the SD Card. Replace the file tracks\Mando9.wav with the background music of your choice. The file needs to be a 44,100 Hz WAV file
 3) Copy the [Amban_config.h](Amban_config.h) file to the config folder in the ProffieOS install. It is setup for a Proffie 1.5 by default, so if you are running Proffie 2.2 modify the top of the code to select the correct header file. It should look like this:
 
 ```c

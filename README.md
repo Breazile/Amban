@@ -15,8 +15,9 @@ Electronics for an Amban sniper rifle from the Mandalorian. This adds lighting a
 7) A [Kill Key](https://www.thingiverse.com/thing:3188361) if you are using the recharge port. Inserting this turns off the power.
 7) 2 momentary switches. I used [this](https://www.amazon.com/gp/product/B073TYWX86/ref=ppx_yo_dt_b_asin_title_o05_s01?ie=UTF8&psc=1) and [this](https://www.amazon.com/gp/product/B06XT3FLVM/ref=ppx_yo_dt_b_asin_title_o05_s01?ie=UTF8&psc=1) in my setup.
 8) [22 gauge](https://www.amazon.com/Remington-Industries-22PTFESTRBLA25-Stranded-Diameter/dp/B0713TNFL5/ref=sr_1_31?keywords=22+gauge+ptfe+wire&qid=1580603237&sr=8-31) to [26 gauge](https://www.amazon.com/Remington-Industries-26PTFESTRRED25-Stranded-Diameter/dp/B0727S6395/ref=sr_1_82?keywords=26+gauge+ptfe+wire&qid=1580603341&sr=8-82) PTFE wire, but just about any wire will do. PTFE insulation is small, and does not melt like PVC
+9) [330 ohm resistor](https://www.amazon.com/RadioShack-8-Watt-Carbon-Resistors-5-Pack/dp/B007Z7P9AM/ref=sr_1_26?crid=2L9IDWUX9FI5J&keywords=330+ohm+resistors+1%2F8+watt&qid=1580605256&sprefix=330+ohm%2Caps%2C217&sr=8-26) (1/8 watt) for each of the 3 data lines going to the NeoPixels. Here's another [source](https://www.mouser.com/ProductDetail/71-RN55D3300FTR)
 
-## Proffie setup
+## Proffie Setup
 
 The Proffie is an Arduino based board. You'll need to get your PC setup with the right tools. Instructions are [here](https://github.com/profezzorn/arduino-proffieboard/blob/master/README.md), and you can find information on the main [Proffie discussion board](http://therebelarmory.com/board/97/profezzorns-lab).
 
@@ -44,3 +45,26 @@ The Proffie is an Arduino based board. You'll need to get your PC setup with the
 // #define CONFIG_FILE "config/td_proffieboard_config.h"
 #define CONFIG_FILE "config/Amban_config.h"
 ```
+6) Configure the number of LEDs for each strip (or "blade"). In the example below, the center NeoPixel has 1 LED, and the two strips have 30 LEDs each. Edit the number immediately after **WS2811BladePtr<**
+```c
+BladeConfig blades[] = {
+ { 0, 
+   WS2811BladePtr<1, WS2811_ACTUALLY_800kHz | WS2811_GRB>(),
+   WS2811BladePtr<30, WS2811_ACTUALLY_800kHz | WS2811_GRB, blade2Pin, PowerPINS<bladePowerPin4> >(),
+   WS2811BladePtr<30, WS2811_ACTUALLY_800kHz | WS2811_GRB, blade3Pin, PowerPINS<bladePowerPin5> >(),
+   CONFIGARRAY(presets) },
+};
+``` 
+7) Compile and download the code to the Proffie. Make sure you have the SD card setup and inserted into the Proffie board. You'll need the battery hooked up to play sounds even if it is connected to a PC through USB
+
+## Proffie 1.5 Wiring
+
+This is a basic Proffie crossguard setup where the single NeoPixel is in the center, and the strips on the forks are on the sides.
+![Image](AmbanRifle.png)
+
+## Proffie Resources
+
+- [Proffie 1.5 page](https://fredrik.hubbe.net/lightsaber/v4/)
+- [Proffie 2.2 page](https://fredrik.hubbe.net/lightsaber/v5/)
+- [Proffie OS](https://fredrik.hubbe.net/lightsaber/proffieos.html)
+- [Proffie GitHub](https://github.com/profezzorn/arduino-proffieboard/blob/master/README.md) with instructions

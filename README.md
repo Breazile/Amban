@@ -45,7 +45,7 @@ The Proffie is an Arduino based board. You'll need to get your PC setup with the
 // #define CONFIG_FILE "config/td_proffieboard_config.h"
 #define CONFIG_FILE "config/Amban_config.h"
 ```
-6) Configure the number of LEDs for each strip (or "blade"). In the example below, the center NeoPixel has 1 LED, and the two strips have 30 LEDs each. Edit the number immediately after **WS2811BladePtr<**
+6) Configure the number of LEDs for each strip (or "blade") at the bottom of Amban_config.h. In the example below, the center NeoPixel has 1 LED, and the two strips have 30 LEDs each. Edit the number immediately after **WS2811BladePtr<**
 ```c
 BladeConfig blades[] = {
  { 0, 

@@ -15,7 +15,7 @@ Electronics for an Amban sniper rifle from the Mandalorian. This adds lighting a
 7) A [Kill Key](https://www.thingiverse.com/thing:3188361) if you are using the recharge port. Inserting this turns off the power.
 7) 2 momentary switches. I used [this](https://www.amazon.com/gp/product/B073TYWX86/ref=ppx_yo_dt_b_asin_title_o05_s01?ie=UTF8&psc=1) and [this](https://www.amazon.com/gp/product/B06XT3FLVM/ref=ppx_yo_dt_b_asin_title_o05_s01?ie=UTF8&psc=1) in my setup.
 8) [22 gauge](https://www.amazon.com/Remington-Industries-22PTFESTRBLA25-Stranded-Diameter/dp/B0713TNFL5/ref=sr_1_31?keywords=22+gauge+ptfe+wire&qid=1580603237&sr=8-31) to [26 gauge](https://www.amazon.com/Remington-Industries-26PTFESTRRED25-Stranded-Diameter/dp/B0727S6395/ref=sr_1_82?keywords=26+gauge+ptfe+wire&qid=1580603341&sr=8-82) PTFE wire, but just about any wire will do. PTFE insulation is small, and does not melt like PVC
-9) [330 ohm resistor](https://www.amazon.com/RadioShack-8-Watt-Carbon-Resistors-5-Pack/dp/B007Z7P9AM/ref=sr_1_26?crid=2L9IDWUX9FI5J&keywords=330+ohm+resistors+1%2F8+watt&qid=1580605256&sprefix=330+ohm%2Caps%2C217&sr=8-26) (1/8 watt) for each of the 3 data lines going to the NeoPixels. Here's another [source](https://www.mouser.com/ProductDetail/71-RN55D3300FTR)
+9) [330 ohm resistor](https://www.amazon.com/RadioShack-8-Watt-Carbon-Resistors-5-Pack/dp/B007Z7P9AM/ref=sr_1_26?crid=2L9IDWUX9FI5J&keywords=330+ohm+resistors+1%2F8+watt&qid=1580605256&sprefix=330+ohm%2Caps%2C217&sr=8-26) (1/8 watt) for each of the 3 data lines going to the NeoPixels. Here's another [source](https://www.mouser.com/ProductDetail/71-RN55D3300FTR). If you are using a Proffie 2.2, then you'll only need 2 [470 ohm resistors](https://www.mouser.com/ProductDetail/Vishay-Dale/RN55D4700FRE6?qs=%2Fha2pyFadugp4AYbWju4DdnJwbPUUapgYCZc5X3B4HuUhTTCsheT7g%3D%3D)
 
 ## Proffie Setup
 
@@ -60,7 +60,12 @@ BladeConfig blades[] = {
 ## Proffie 1.5 Wiring
 
 This is a basic Proffie crossguard setup where the single NeoPixel is in the center, and the strips on the forks are on the sides.
-![Image](AmbanRifle.png)
+![Image](Proffie15Wiring.jpg)
+
+## Proffie 2.2 Wiring
+
+This is a basic Proffie crossguard setup where the single NeoPixel is in the center, and the strips on the forks are on the sides.
+![Image](Proffie22Wiring.jpg)
 
 ## Proffie Resources
 

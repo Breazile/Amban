@@ -11,5 +11,7 @@ What I used for this setup:
 3) [28mm 4W speaker](https://tcsdcc.com/1694) - common speaker used in saber installs
 4) [18650 Battery](https://www.thecustomsabershop.com/TrustFire-Protected-37V-2400mAh-18650-Li-Ion-Battery-2-pack-P517.aspx)
 5) [Battery holder](https://www.thecustomsabershop.com/18650-Single-Cell-Holder-P886.aspx) - you could also put it into the cartridge slot where the round would go
-6) [Power jack](https://www.thecustomsabershop.com/Switchcraft-21mm-Power-Jack-P822.aspx)(recharge port) - or just use a power switch
+6) [Power jack](https://www.thecustomsabershop.com/Switchcraft-21mm-Power-Jack-P822.aspx) (recharge port) - or just use any power switch
+7) A [Kill Key](https://www.thingiverse.com/thing:3188361) if you are using the recharge port. Inserting this turns off the power.
 7) 2 momentary switches. I used [this](https://www.amazon.com/gp/product/B073TYWX86/ref=ppx_yo_dt_b_asin_title_o05_s01?ie=UTF8&psc=1) and [this](https://www.amazon.com/gp/product/B06XT3FLVM/ref=ppx_yo_dt_b_asin_title_o05_s01?ie=UTF8&psc=1) in my setup.
+8) [22 gauge](https://www.amazon.com/Remington-Industries-22PTFESTRBLA25-Stranded-Diameter/dp/B0713TNFL5/ref=sr_1_31?keywords=22+gauge+ptfe+wire&qid=1580603237&sr=8-31) to [26 gauge](https://www.amazon.com/Remington-Industries-26PTFESTRRED25-Stranded-Diameter/dp/B0727S6395/ref=sr_1_82?keywords=26+gauge+ptfe+wire&qid=1580603341&sr=8-82) PTFE wire, but just about any wire will do. PTFE is small, and does not melt like PVC

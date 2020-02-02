@@ -76,3 +76,4 @@ This is a basic Proffie crossguard setup where the single NeoPixel is in the cen
 - [Proffie OS](https://fredrik.hubbe.net/lightsaber/proffieos.html)
 - [Proffie GitHub](https://github.com/profezzorn/arduino-proffieboard/blob/master/README.md) with instructions
 - Here's a nice [setup tutorial](https://www.youtube.com/watch?v=JMNg-pkQrA4&fbclid=IwAR0gjirY-aR6i-7L1IlWFe4KIV8D3-mI8-kNjwR4FrIbxL6cVWXC3I72UBI) on getting started with a Proffie 2.2
+- [Proffie discussion board](http://therebelarmory.com/board/97/profezzorns-lab) and a [newbie thread](http://therebelarmory.com/thread/10207/proffieboard-newbie-thread)

@@ -21,4 +21,21 @@ Electronics for an Amban sniper rifle from the Mandalorian. This adds lighting a
 The Proffie is an Arduino based board. You'll need to get your PC setup with the right tools. Instructions are [here](https://github.com/profezzorn/arduino-proffieboard/blob/master/README.md), and you can find information on the main [Proffie discussion board](http://therebelarmory.com/board/97/profezzorns-lab).
 
 1) [Proffie OS 3.9](https://fredrik.hubbe.net/lightsaber/proffieos.html) or later
-2) SD card with all of the sound files
+2) SD card with all of the sound files. Download the [ZIP file](SDCard.zip) and copy them to the SD Card.
+3) Copy the [Amban_config.h](Amban_config.h) file to the config folder in the ProffieOS install.
+4) Double click the ProffieOS.ino file from the Proffie install (under the Arduino folder) to launch the project
+5) Comment out the default config file, and add the Ambian include file. Iy should look like this:
+
+```c
+// #define CONFIG_FILE "config/default_proffieboard_config.h"
+// #define CONFIG_FILE "config/default_v3_config.h"
+// #define CONFIG_FILE "config/crossguard_config.h"
+// #define CONFIG_FILE "config/graflex_v1_config.h"
+// #define CONFIG_FILE "config/prop_shield_fastled_v1_config.h"
+// #define CONFIG_FILE "config/owk_v2_config.h"
+// #define CONFIG_FILE "config/test_bench_config.h"
+// #define CONFIG_FILE "config/toy_saber_config.h"
+// #define CONFIG_FILE "config/proffieboard_v1_test_bench_config.h"
+// #define CONFIG_FILE "config/td_proffieboard_config.h"
+#define CONFIG_FILE "config/Amban_config.h"
+```

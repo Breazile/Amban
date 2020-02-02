@@ -61,13 +61,13 @@ BladeConfig blades[] = {
 
 This is a basic Proffie crossguard setup where the single NeoPixel is in the center, and the strips on the forks are on the sides. Pay attention to the direction of the arrows on the data pin of the NeoPixels. Data only goes in one direction.
 
-![Image](Proffie15Wiring.jpg)
+
 
 ## Proffie 2.2 Wiring
 
 This is a basic Proffie crossguard setup where the single NeoPixel is in the center, and the strips on the forks are on the sides. This is a basic Proffie crossguard setup where the single NeoPixel is in the center, and the strips on the forks are on the sides. Pay attention to the direction of the arrows on the data pin of the NeoPixels. Data only goes in one direction.
 
-![Image](Proffie22Wiring.jpg)
+
 
 ## Proffie Resources
 

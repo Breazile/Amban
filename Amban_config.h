@@ -1,5 +1,6 @@
 #ifdef CONFIG_TOP
-#include "proffieboard_v1_config.h"
+#include "proffieboard_v1_config.h" // Proffie 1.5
+//#include "v3_config.h"            // Proffie 2.2
 #define NUM_BLADES 3
 #define NUM_BUTTONS 2
 #define VOLUME 1500

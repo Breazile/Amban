@@ -1,4 +1,4 @@
-# Amban sniper rifle electronics
+# [Amban sniper rifle](https://starwars.fandom.com/wiki/Amban_sniper_rifle) electronics
 ![Image](AmbanRifle.png)
 
 Electronics for an Amban sniper rifle from the Mandalorian. This adds lighting and sound effects leveraging the blaster config from the Proffie sound board.

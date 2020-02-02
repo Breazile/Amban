@@ -22,9 +22,14 @@ The Proffie is an Arduino based board. You'll need to get your PC setup with the
 
 1) [Proffie OS 3.9](https://fredrik.hubbe.net/lightsaber/proffieos.html) or later
 2) SD card with all of the sound files. Download the [ZIP file](SDCard.zip) and copy them to the SD Card.
-3) Copy the [Amban_config.h](Amban_config.h) file to the config folder in the ProffieOS install.
+3) Copy the [Amban_config.h](Amban_config.h) file to the config folder in the ProffieOS install. It is setup for a Proffie 1.5 by default, so if you are running Proffie 2.2 modify the top of the code to select the correct header file. It should look like this:
+
+```c
+//#include "proffieboard_v1_config.h" // Proffie 1.5
+#include "v3_config.h"            // Proffie 2.2
+```
 4) Double click the ProffieOS.ino file from the Proffie install (under the Arduino folder) to launch the project
-5) Comment out the default config file, and add the Ambian include file. Iy should look like this:
+5) Comment out the default config file, and add the Ambian include file. It should look like this:
 
 ```c
 // #define CONFIG_FILE "config/default_proffieboard_config.h"
